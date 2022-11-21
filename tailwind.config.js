@@ -17,7 +17,8 @@ module.exports = {
       animation: {
         fadeInOut: 'fadeInOut 2s ease-in-out',
         fadeIn: 'fadeIn 2s ease-in',
-        floatUp: 'floatUp 3s ease-out',
+        subtleFloat: 'subtleFloat 2s ease-in-out',
+        floatUp: 'floatUp 3s ease-in-out',
       },
       keyframes: {
         fadeInOut: {
@@ -26,8 +27,11 @@ module.exports = {
         },
         fadeIn: {
           '0%': { opacity: 0 },
-          '50%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        subtleFloat: {
+          '0%': { opacity: 0, transform: 'translateY(20%)' },
+          '100%': { opacity: 1, transform: 'translateY(0%)' },
         },
         floatUp: {
           '0%': {

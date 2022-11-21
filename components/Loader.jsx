@@ -9,7 +9,7 @@ const Loader = () => (
       src="/images/GradientLoader.gif"
       width={200}
       height={200}
-      alt="Loading icon as site loads"
+      alt="Loading Icon"
       priority="true"
       className="animate-fadeInOut"
     />

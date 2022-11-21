@@ -1,7 +1,17 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Landing from '../components/Landing';
+import Loader from '../components/Loader';
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div className="bg-darkBackground w-screen h-screen">
       <Head>
@@ -13,7 +23,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Landing />
+      {loading && <Loader />}
+      {!loading && <Landing />}
     </div>
   );
 }
