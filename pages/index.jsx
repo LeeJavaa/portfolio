@@ -16,7 +16,7 @@ export default function Home() {
     <div className="bg-darkBackground w-screen h-screen">
       <Head>
         <title>Nefelibata | Lee Johnson Portfolio </title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="description"
           content="Lee Johnson Portfolio site titled Nefelibata"

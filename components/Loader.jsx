@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Loader = () => (
   <main
-    className="grid place-content-center w-screen h-screen relative bg-darkBackground z-10 overflow-none"
+    className="grid place-content-center w-screen h-screen relative bg-darkBackground overflow-none"
     id="loader"
   >
     <Image

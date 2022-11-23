@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         darkBackground: '#0F0F12',
         light: '#D9D9D9',
+        accent: '#DC6B76',
       },
       fontFamily: {
         Spectral: ['Spectral', 'serif'],
@@ -19,6 +20,7 @@ module.exports = {
         fadeIn: 'fadeIn 2s ease-in',
         subtleFloat: 'subtleFloat 2s ease-in-out',
         floatUp: 'floatUp 3s ease-in-out',
+        accentSlide: 'accentSlide 1s linear',
       },
       keyframes: {
         fadeInOut: {
@@ -51,6 +53,13 @@ module.exports = {
           '100%': {
             opacity: 0.8,
             transform: 'translateY(0%)',
+          },
+        },
+        accentSlide: {
+          '0%': { backgroundImage: 'linear-gradient(to top, light, light)' },
+          '50%': { backgroundImage: 'linear-gradient(to top, accent, light)' },
+          '100%': {
+            backgroundImage: 'linear-gradient(to top, accent, accent)',
           },
         },
       },
