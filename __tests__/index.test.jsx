@@ -17,7 +17,7 @@ describe('Home Page', () => {
       timeout: 2050,
     });
     const endTime = performance.now();
-    expect(endTime - startTime).toBeCloseTo(2000, -2); // Within 50 milliseconds of 2 seconds
+    expect(endTime - startTime).toBeCloseTo(2000, -3); // Within 500 milliseconds of 2 seconds
   });
 
   it('Should display the loader in the beginning', () => {

@@ -20,7 +20,7 @@ module.exports = {
         fadeIn: 'fadeIn 2s ease-in',
         subtleFloat: 'subtleFloat 2s ease-in-out',
         floatUp: 'floatUp 3s ease-in-out',
-        accentSlide: 'accentSlide 1s linear',
+        midHamburgerOut: 'midHamburgerOut 0.5s ease-in-out',
       },
       keyframes: {
         fadeInOut: {
@@ -55,11 +55,14 @@ module.exports = {
             transform: 'translateY(0%)',
           },
         },
-        accentSlide: {
-          '0%': { backgroundImage: 'linear-gradient(to top, light, light)' },
-          '50%': { backgroundImage: 'linear-gradient(to top, accent, light)' },
+        midHamburgerOut: {
+          '0%': {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
           '100%': {
-            backgroundImage: 'linear-gradient(to top, accent, accent)',
+            transform: 'translateX(-50px)',
+            opacity: 0,
           },
         },
       },

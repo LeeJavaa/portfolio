@@ -6,12 +6,21 @@ import Navbar from '../components/Navbar';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+
+  const showMenu = () => {
+    if (!menu) {
+      setMenu(true);
+    } else {
+      setMenu(false);
+    }
+  };
 
   return (
     <div className="bg-darkBackground w-screen h-screen">
@@ -27,7 +36,7 @@ export default function Home() {
       {loading && <Loader />}
       {!loading && (
         <>
-          <Navbar />
+          <Navbar showMenu={showMenu} menu={menu} />
           <Landing />
         </>
       )}

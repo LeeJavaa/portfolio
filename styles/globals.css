@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .menu-icon {
+    @apply absolute right-0 w-2/3 h-1 md:h-1.5 bg-light group-hover:bg-accent group-hover:ease-in group-hover:duration-200 before:absolute before:md:w-10 before:right-0 before:h-1 before:md:h-1.5 before:w-8 before:bg-light before:-translate-y-2 before:md:-translate-y-3 before:group-hover:bg-accent before:group-hover:ease-in before:group-hover:duration-200 after:absolute after:w-1/2 after:right-0 after:h-1 after:md:h-1.5 after:bg-light after:translate-y-2 after:md:translate-y-3 after:group-hover:bg-accent after:group-hover:ease-in after:group-hover:duration-200;
+  }
+}
